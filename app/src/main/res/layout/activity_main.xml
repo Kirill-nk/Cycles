@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp">
+        <Button
+            android:id="@+id/btn_add_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_girl"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/green_500"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_show_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/show_results"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/green_500"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TableLayout
+            android:id="@+id/table_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:divider="@color/gray_300"
+            android:showDividers="beginning|middle|end">
+            <TableRow
+                android:background="@color/gray_100">
+                <TextView
+                    android:id="@+id/header_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/header_name"
+                    android:padding="12dp" />
+                <TextView
+                    android:id="@+id/header_last_period"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/header_last_period"
+                    android:padding="12dp" />
+                <TextView
+                    android:id="@+id/header_fertile_window"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/header_fertile_window"
+                    android:padding="12dp" />
+                <TextView
+                    android:id="@+id/header_next_period"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/header_next_period"
+                    android:padding="12dp" />
+                <TextView
+                    android:id="@+id/header_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="Дней до овуляции"
+                    android:padding="12dp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
+

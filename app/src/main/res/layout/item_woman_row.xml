@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btn_remove_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_row" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName|textCapWords"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:id="@+id/input_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="@string/hint_start_date" />
+
+    <EditText
+        android:id="@+id/input_prev_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="@string/hint_prev_date" />
+
+    <EditText
+        android:id="@+id/input_days_to_ovulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/hint_days_to_ovulation" />
+
+    <TextView
+        android:id="@+id/result_ovulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ovulation_date_unknown"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/result_ovulation_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ovulation_period_unknown" />
+
+    <TextView
+        android:id="@+id/result_next_menstruation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_menstruation_date_unknown"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/result_days_until_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/days_until_next_fmt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
+

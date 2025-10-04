@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мои дорогие женщины</string>
+    <string name="ovulation_date_fmt">Овуляция: %1$s</string>
+    <string name="ovulation_period_fmt">Фертильное окно: %1$s – %2$s</string>
+    <string name="next_menstruation_date_fmt">Следующая менструация: %1$s</string>
+    <string name="days_until_next_fmt">Дней до следующих месячных: %1$d</string>
+    <string name="ovulation_date_unknown">Овуляция: —</string>
+    <string name="ovulation_period_unknown">Фертильное окно: —</string>
+    <string name="next_menstruation_date_unknown">Следующая менструация: —</string>
+
+    <string name="add_person">Добавить</string>
+    <string name="add_new_girl">Добавить новую девчулю</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="remove_row">Удалить</string>
+
+    <string name="hint_name">Имя</string>
+    <string name="hint_age">Возраст</string>
+    <string name="hint_start_date">Дата последней менструации (дд.мм.гггг)</string>
+    <string name="hint_prev_date">Предыдущая дата (дд.мм.гггг)</string>
+    <string name="hint_days_to_ovulation">Дней до овуляции от начала</string>
+
+    <string name="show_results">Показать моих девчат</string>
+    <string name="header_name">Имя</string>
+    <string name="header_fertile_window">Окно фертильности</string>
+    <string name="header_next_period">Дата следующих месячных</string>
+    
+    <string name="add_date">Добавить дату</string>
+    <string name="save">Сохранить</string>
+    <string name="cycle_history">История циклов:</string>
+    <string name="changes_saved">Изменения сохранены</string>
+    <string name="add_at_least_one_date">Добавьте хотя бы одну дату</string>
+    <string name="error_cannot_get_data">Ошибка: не удалось получить данные</string>
+</resources>
