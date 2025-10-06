@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(false); // Remove back arrow
             actionBar.setDisplayShowTitleEnabled(true);
             // Make the title clickable
-            actionBar.setTitle("Девчули");
+            actionBar.setTitle("girls");
         }
 
         Button showResults = findViewById(R.id.btn_show_results);
@@ -96,8 +96,7 @@ public class MainActivity extends AppCompatActivity {
                     LocalDate prev2 = parseDateOrNull(p2.previousCycleStartDate);
                     
                     LocalDate next1 = calculateNextPeriod(last1, prev1);
-                    LocalDate next2 = calculateNextPeriod(last2, prev2);
-                    
+
                     if (next1 == null && next2 == null) return 0;
                     if (next1 == null) return 1;
                     if (next2 == null) return -1;
